@@ -61,7 +61,7 @@ class Rotater extends Thread {
             // 매초 seekbar의 회전값을 변경한다.
             //핸들러 측으로 메시지를 보낸다.
             Message msg = new Message();
-            msg.what = MainActivity.ACTION_SET;
+            msg.what = MainActivity.ACTION_SET; // 메인액티비
             handler.sendMessage(msg);
 //            handler.sendEmptyMessage(MainActivity.ACTION_SET); 위3줄과 같은 코드
 
